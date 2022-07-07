@@ -1,1 +1,226 @@
-theme: jekyll-theme-minimal
+# Site
+repository: imdhruva/resume
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 1
+
+# Personal info
+name: Dhruva Chandra
+title: Senior Software Engineer
+email: dhruva.sachin@gmail.com
+website: www.imdhruva.github.io/resume/
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+github_username:  imdhruva
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: dhruvachandra
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/self.jpg
+about_content: | # this will include new lines to allow paragraphs
+  I am a Sr. Software Engineer at Splunk who is passionate about delivering cloud native, highly scalable and reliable products which address pressing needs of the business.
+
+  I am most skilled in: <mark>AWS</mark> <mark>Golang</mark> <mark>Python</mark> <mark>Terraform</mark> <mark>GitLab</mark> <mark>Kubernetes</mark>
+
+content:
+  - title: Global DNS # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Global DNS @ Splunk
+        link: splunk.com
+        caption: May 2021 - present
+        # link_text: Project Website
+        additional_links:
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          Design, implement and enhance  a Global DNS solution which is cloud native, eventually consistent across multiple DNS providers and is fault tolerant across multiple regions. This project involved following technologies:
+          * Kubernetes
+          * Istio
+          * Prometheus/Grafana
+          * Micro-services architecture
+          * Python
+          * Golang
+          * AWS
+          * GCP
+          * DNS
+          * Helm
+          * Gitlab CI
+          * Terraform
+
+  - title: Kubernetes Self Service # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Invoice2go
+        link: bill.com
+        # link_text: boringcompany.com
+        sub_title: Senior DevOps Engineer
+        caption: May 2020 - May 2021
+        quote: >
+          Enable developers to focus on business outcomes
+        description: | # this will include new lines to allow paragraphs
+            Make a common pattern across organisation to ensure on creating a repositories developer is services with:
+            * CI/CD pipeline
+            * Code security scans and test report
+            * Registry for container images
+            * Deployment manifest (kubernetes manifest)
+            * Metrics endpoint and dashboards
+            * Monitoring (with SLx dashboards and alerts)
+            This involed:
+            * Setting up standardising naming conventions across organisations
+            * Migrating from Github EE to GitLab EE
+            * Setting up linkerd2 cross cluster
+            * Setting up cloud native Grafana and Thanos installation on kubernetes
+            * standardising EKS upgrades and deployments
+  
+  - title: Containerization # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Invoice2go
+        link: bill.com
+        # link_text: boringcompany.com
+        sub_title: Senior DevOps Engineer
+        caption: Oct 2019 - May 2020
+        quote: >
+          DevOps is not just infrastructure engineering. Its a role that evangalizes the platform, develops the platform and enhances the platform
+        description: | # this will include new lines to allow paragraphs
+            Enahnce the existing setup in Invoice2go from:
+            * multi-branch pipelines to single branch pipelines
+            * ec2 hosted containers to a proper container orchestration layer
+            The vision was to migrate to EKS based kubernetes platform. The scope of project eventually evolved to include:
+            * updating multi-branch deployments to main branch deployments
+            * standardising deployment patterns. This involves talking to all the stakeholders and classifying different deployments and making a standard pattern across all the organisation for all the deployments
+            * creating release management pipelines for secure and CSI complaint AMIs of EKS nodes
+            * migrating all containers to EKS via the new deployment engine
+  
+  - title: SRE # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Splunk
+        link: splunk.com
+        # link_text: boringcompany.com
+        sub_title: SRE
+        caption: May 2019 - Oct 2019
+        # quote: >
+        #   DevOps is not just infrastructure engineering. Its a role that evangalizes the platform, develops the platform and enhances the platform
+        description: | # this will include new lines to allow paragraphs
+            Assist in migrating thousands of SplunkCloud customers to a new version of Splunk software with object backed storage. This project involved working at massive scale to make sure migration process with multiple touchpoints is completely automated, seemless and massively scalable. It involved scripting in Golang, writing custom terraform modules, coordinating with multiple teams and mentoring folks to upskill in coding and AWS.
+  
+  - title: Sr Consultant # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Sr Infrastructure Consultant
+        link: https://www.cmdsolutions.com.au/
+        # link_text: boringcompany.com
+        sub_title: Sr Infrastructure Consultant
+        caption: May 2018 - May 2019
+        quote: >
+          This was the biggest learning curve for me as we were invested in creating cookie-cutter patterns for various start-ups to make sure they get highly compliant AWS landing zones up in a matter of hours rather than days.
+        description: | # this will include new lines to allow paragraphs
+            Did multiple projects on AWS to migrate customers from on-premise. This involed following technolgies and competence:
+            * Python
+            * AWS
+            * PCI-DSS complaice
+            * APRA compliance
+            * Ansible, Puppet, Terraform
+            This gig really tought me:
+            * how to manage expectations on a project
+            * how to keep colleagues invested and mmotivated in projects
+            * keep projects relevant to a customers needs
+            * importance of enjoying time with colleagues
+
+  - title: Consultant # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Consultant @ Qantas
+        link: https://www.qantas.com.au/
+        # link_text: boringcompany.com
+        sub_title: Consultant
+        caption: Jan 2010 - May 2018
+        # quote: >
+        #   This was the biggest learning curve for me as we were invested in creating cookie-cutter patterns for various start-ups to make sure they get highly compliant AWS landing zones up in a matter of hours rather than days.
+        description: | # this will include new lines to allow paragraphs
+            Started my tenure with on-prem Middleware technologies, and sloly progressed to manage multiple Middleware technologies including:
+            * WebLogic Servers
+            * Web Servers
+            * MQ Servers
+            * SOA Suite
+
+            Eventually I was busy with PoC on AWS for cost saving opportunities which is when I started working in _Center of Excelence for Cloud_. Where I was part of the team which built Qantas Cloud Platform - an ecapsulation over a public Cloud with other enabling technologies wrapped in including:
+            * Atlassian Suite
+            * Proxy servers
+            * Splunk
+            * CSI compliant AMIs
+            * AD Services
+            * Content Management Platform, etc.
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Amrita University
+        caption: 2006 - 2010
+        sub_title: BTech Electronics & Instrumentation
+        # quote: >
+        #   Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          During my time at the university I learnt a lot about control systems and eletronics. I also had the opportunity to work in [Indian Institute of Astrophysics](https://www.iiap.res.in/) to develop a hub to collect temperature variances within the telescope.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+      - Adventure sports ([bungy jumping](https://youtu.be/ADC9OhDJFIg?t=41), skydiving, [scuba diving](images/scuba.jpg) )
+      - Swimming
+      - Hiking [images/royal_arch.jpg]
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
