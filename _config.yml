@@ -3,7 +3,7 @@ repository: imdhruva/resume
 favicon: images/favicon.ico
 
 # Content configuration version
-version: 1
+version: 2
 
 # Personal info
 name: Dhruva Chandra
@@ -63,22 +63,18 @@ content:
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        # quote: >
-        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        quote: >
+          The Domain Name Server (DNS) is the Achilles heel of the Web. The important thing is that it's managed responsibly.
         description: | # this will include new lines to allow paragraphs
-          Design, implement and enhance  a Global DNS solution which is cloud native, eventually consistent across multiple DNS providers and is fault tolerant across multiple regions. This project involved following technologies:
-          * Kubernetes
-          * Istio
-          * Prometheus/Grafana
-          * Micro-services architecture
-          * Python
-          * Golang
-          * AWS
-          * GCP
-          * DNS
-          * Helm
-          * Gitlab CI
-          * Terraform
+          Part of the team that undertook a DNS management tech-debt where we had to :
+          * migrate from a specific DNS provider to a custom provider backed with multiple DNS providers
+          * design and implement a DNS solution which is cloud-native, micro-services architecture driven, scalable, fault tolerant across regions and eventually consistent across multiple DNS providers.
+          * automate and clean dead records (to the tune of ~500K) by scripting jobs that run various validations to make sure the records are not owned any more by Splunk.
+
+          This project involved following technologies:
+          <mark> Kubernetes </mark> <mark> Istio </mark> <mark> Prometheus/Grafana </mark> <mark> Micro-services architecture </mark> <mark> Python </mark> <mark> Golang </mark> <mark> AWS </mark> <mark> GCP </mark> <mark> DNS </mark> <mark> Helm </mark> <mark> Gitlab CI </mark> <mark> Terraform </mark>
+
+          This project was seemlessly delivered with zero down time and invovled technical leadership in Solution Architecture and maturity and conviction to manage various conflicting decisions along the way.
 
   - title: Kubernetes Self Service # Title for the section
     layout: list # Type of content section (list/text)
@@ -90,9 +86,9 @@ content:
         sub_title: Senior DevOps Engineer
         caption: May 2020 - May 2021
         quote: >
-          Enable developers to focus on business outcomes
+          An infrastructure engineeers ultimate goal should be to enable developers to focus on business outcomes
         description: | # this will include new lines to allow paragraphs
-            Make a common pattern across organisation to ensure on creating a repositories developer is services with:
+            Make a common pattern across organisation to ensure on creating a repositories developer is serviced with:
             * CI/CD pipeline
             * Code security scans and test report
             * Registry for container images
@@ -209,7 +205,7 @@ content:
       Alongside my interests in networks and software engineering some of my other interests and hobbies are:
       - Adventure sports ([bungy jumping](https://youtu.be/ADC9OhDJFIg?t=41), skydiving, [scuba diving](images/scuba.jpg) )
       - Swimming
-      - Hiking [images/royal_arch.jpg]
+      - [Hiking](images/royal_arch.jpg)
 
 # Footer
 footer_show_references: true
